@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MacOutlet</title>
+    
+    <link href="styles/style.css" rel="stylesheet" charset="utf-8">
+    <script type="text/javascript" src="js/items.js" defer></script>
+    <script type="text/javascript" src="js/init.js" defer></script>
+    <script type="text/javascript" src="js/filter.js" defer></script>
+</head>
+<body>
+    <header class="header">
+    </header>
+    
+        <div class="layout">
+            <aside class="side-panel">
+                <form method="post" name="product-filter" id="product-filter">
+                    <div class="filter-category-text">Price:</div>
+                    <div class="row">
+                        <span class="col-25">
+                            <label for="priceFrom">From</label>
+                        </span>
+                        <span class="col-75">
+                            <input type="text" pattern="[0-9]{0,7}" name="priceFrom" value="0" />
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-25">
+                            <label for="priceTo">To</label>
+                        </span>
+                        <span class="col-75">
+                            <input type="text" pattern="[0-9]{0,7}" name="priceTo" value="0" />
+                        </span>
+                    </div>
+    
+                    <!-- COLORS -->
+                    <div class="filter-category-text">Color:</div>
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="color-red" name="color-red" />
+                            <label for="color-red">Red</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="color-green" name="color-green" />
+                            <label for="color-green">Green</label>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="color-black" name="color-black" />
+                            <label for="color-black">Black</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="color-white" name="color-white" />
+                            <label for="color-white">White</label>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="color-blue" name="color-blue" />
+                            <label for="color-blue">Blue</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="color-grey" name="color-grey" />
+                            <label for="color-grey">Grey</label>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="color-gold" name="color-gold" />
+                            <label for="color-gold">Gold</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="color-yellow" name="color-yellow" />
+                            <label for="color-yellow">Yellow</label>
+                        </span>
+                    </div>
+                    
+                    <!-- Memory -->
+                    <div class="filter-category-text">Memory:</div>
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-32gb" name="ram-32gb" />
+                            <label for="ram-32gb">32 Gb</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-512gb" name="ram-512gb" />
+                            <label for="ram-512gb">512 Gb</label>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-64gb" name="ram-4gb" />
+                            <label for="ram-64gb">64 Gb</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-1tb" name="ram-1tb" />
+                            <label for="ram-1tb">1 Tb</label>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-128gb" name="ram-128gb" />
+                            <label for="ram-128gb">128 Gb</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-2tb" name="ram-2tb" />
+                            <label for="ram-2tb">2 Tb</label>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-256gb" name="ram-256gb" />
+                            <label for="ram-256gb">256 Gb</label>
+                        </span>
+                        <span class="col-50">
+                            <input type="checkbox" id="ram-4tb" name="ram-4tb" />
+                            <label for="ram-4tb">4 Tb</label>
+                        </span>
+                    </div>
+
+                    <!-- OS -->
+                    <div class="filter-category-text">OS:</div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="os-ios" name="os-ios" />
+                            <label for="os-ios">iOS</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="os-macos" name="os-macos" />
+                            <label for="os-macos">Mac OS</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="os-tvos" name="os-tvos" />
+                            <label for="os-tvos">tv OS</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="os-watchos" name="os-watchos" />
+                            <label for="os-watchos">Watch OS</label>
+                        </span>
+                    </div>
+
+                    <!-- Display -->
+                    <div class="filter-category-text">Display:</div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="display-2-5-inch" name="display-2-5-inch" />
+                            <label for="display-2-5-inch">2 - 5 inch</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="display-5-7-inch" name="display-5-7-inch" />
+                            <label for="display-5-7-inch">5 - 7 inch</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="display-7-12-inch" name="display-7-12-inch" />
+                            <label for="display-7-12-inch">7 - 12 inch</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-100">
+                            <input type="checkbox" id="display-12-16-inch" name="display-12-16-inch" />
+                            <label for="display-12-16-inch">12 - 16 inch</label>
+                        </span>
+                    </div>
+                </form>
+
+            </aside>
+            <div id="productId" class="container">
+            </div>
+        </div>
+        
+    <footer class="footer">FOOTER</footer>
+    
+</body>
+</html>
